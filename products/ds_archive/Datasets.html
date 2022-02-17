@@ -34,22 +34,23 @@
 </div>
 <a name="overview"></a>
 <h2>Overview</h2>
-<p><span>iHESP is focused on high-resolution, coupled climate simulations spanning the entire globe and regionally downscaled simulations of a region of interest (ex: Gulf of Mexico). Our global climate datasets have been generated using a</span><span>&#160;high&#8208;resolution configuration of the Community Earth System Model version 1.3 (CESM1.3), with a nominal horizontal resolution of 0.25&#176; for the atmosphere and land models and 0.1&#176; for the ocean and sea&#8208;ice models. At these resolutions, the model permits tropical cyclones and ocean mesoscale eddies, allowing interactions between these synoptic and mesoscale phenomena with large&#8208;scale circulations.</span></p>
-<p>Regional datasets consist of model output from high-resolution simulations using coupled regional climate model <a href="../ihesp-products/Models.html#rcesm">R-CESM</a> (Regional CESM). R-CESM couples the ocean model <a href="https://www.myroms.org/" rel="noopener" target="_blank">ROMS</a> (Regional Ocean Modelling System) with the atmospheric model <a href="https://www.mmm.ucar.edu/weather-research-and-forecasting-model" rel="noopener" target="_blank">WRF</a> (Weather Research and Forecast model) using the CESM/CIME coupling infrastructure. This dataset include standard variables from both ROMS and WRF at selected time interval on their native horizontal and vertical grid.</p>
+<p><span>iHESP is focused on high-resolution, coupled climate simulations spanning the entire globe and regionally downscaled simulations of a region of interest (ex: Gulf of Mexico).</span></p>
+
+<p>The following global and regional climate datasets have been made publicly available through iHESP in several staged releases. The first increment of data release (release date: 8th June, 2020) included the data from the global CESM-HighResMIP control and transient simulations and data from the first 310 years&#160;of the 500-year&#160;pre-industrial control simulation forced by perpetual 1850 conditions. The second increment (release date: 12th June, 2021) consisted of the remaining 190-years of the 1850 pre-industrial control simulation and&#160;250 years of transient (historical and future) climate simulation for the 1850-2100 period. The third increment (release date: 17th Feb, 2022) includes output from all the remaining global and regional model runs.</p>
 <p>&#160;</p>
 <p><a name="global-datasets"></a></p>
 <h2>Global Datasets</h2>
-<p>The following global climate datasets will be made publicly available through iHESP in several staged releases. The first increment of data release (release date: 8th June, 2020) included the data from the CESM-HighResMIP control and transient simulations and data from the first 310 years&#160;of the 500-year&#160;pre-industrial control simulation forced by perpetual 1850 conditions. The second increment (release date: 12th June, 2021) consists of the remaining 190-years of the 1850 pre-industrial control simulation and&#160;250 years of transient (historical and future) climate simulation for the 1850-2100 period.</p>
-<h3>&#160;</h3>
-<h3>CESM-HighResMIP</h3>
+<p><span>Our global climate datasets have been generated using a</span><span>&#160;high&#8208;resolution configuration of the Community Earth System Model version 1.3 (CESM1.3), with a nominal horizontal resolution of 0.25&#176; for the atmosphere and land models and 0.1&#176; for the ocean and sea&#8208;ice models. At these resolutions, the model permits tropical cyclones and ocean mesoscale eddies, allowing interactions between these synoptic and mesoscale phenomena with large&#8208;scale circulations.</span></p>
+<p>&#160;</p>
+<h3>1. CESM-HighResMIP</h3>
 <p>This set contains data from the 1950-control and the accompanying transient climate simulations that follow the HighResMIP protocol.&#160;</p>
 <ul>
 <li>The 1950-control simulation is forced by perpetual 1950 Greenhouse Gas (GHG) emissions for 130 years.</li>
 <li>The transient climate simulation is forced by observed GHG emissions from 1950 to 2005 and then by projected GHG emissions from 2006 to 2050 based on the Representative Concentration Pathway&#160;8.5 (RCP8.5) scenario.</li>
 </ul>
 <p>Both the high-resolution (HR) and low-resolution (LR) version of these datasets have been published on&#160;<a href="https://esgf.llnl.gov/" rel="noopener" target="_blank">Earth Systems Grid Federation (ESGF)<span></span></a> portal with the help of NCAR's ESGF Data Node. The download links are available from&#160;<a href="CESM-HRMIP.html" rel="noopener" target="_blank">this page</a>.&#160;</p>
-<h3>&#160;</h3>
-<h3>CESM-HR (present and future climate simulations)</h3>
+<p>&#160;</p>
+<h3>2. CESM-HR (present and future climate simulations)</h3>
 <p>This collection contains several different simulations:</p>
 <ul>
 <li>A 500-year, pre-industrial control simulation forced by perpetual 1850 conditions, performed on the&#160;<span>Chinese HPC system</span>. This dataset is publicly available via the Texas A&amp;M&#160;<a href="../ihesp-products/data-release/DataRelease_Phase2.html" rel="noopener" target="_blank">Datahub portal</a>. The first 310 years of this dataset are also available through the QNLM <a href="http://ihesp.qnlm.ac/">data release portal</a>.</li>
@@ -57,44 +58,47 @@
 <li>Ensemble of 5-10 present and future climate simulations with observed and projected climate forcing from 1920 to 2050.</li>
 </ul>
 <p>Both the high-resolution (HR) and low-resolution (LR) version of these datasets have been published on our datahub server. The download links are available from&#160;<a href="Sunway_Runs.html" rel="noopener" target="_blank">this page</a>.&#160;</p>
-<h3>&#160;</h3>
-<h3>CESM-HRDP</h3>
+<p>&#160;</p>
+<h3>3. CESM-HRDP</h3>
 <ul>
 <li>62-month hindcasts initialized every November 1st from 1982, 1984, ..., 2016 (18 start dates). For each start date, the hindcast ensemble size is 10. The experiment therefore comprises 930 simulation years at ocean-mesoscale-eddy resolving and TC-permitting horizontal resolution.</li>
 <li>A 61-year FOSI simulation spanning 1958-2018 that was used for initializing the ocean and sea ice components in HRDP. The FOSI simulation is the 5th cycle of an OMIP2 spinup run utilizing JRA55-do surface forcing and performed with the high resolution configuration of CESM's ocean and sea-ice component models.</li>
 </ul>
 <p>These dataset will be made available on the NCAR side in the near future.</p>
 <p>&#160;</p>
-<h3>Transient response experiments</h3>
+<!--<h3>Transient response experiments</h3>
 <h4>1 percent CO2 experiments</h4>
-<h4>Quadruple CO2 experiments</h4>
-<h3>Forced Ocean Sea-Ice (FOSI) Experiments</h3>
-<h4>&#160;</h4>
+<h4>Quadruple CO2 experiments</h4>-->
+<h3>4. Forced Ocean Sea-Ice (FOSI) Experiments</h3>
+<p>&#160;</p>
 <h4>5-cyle FOSI experiments</h4>
-These high-resolution Forced-Ocean-Sea-Ice (FOSI) experiments uses version 2 of the Community Earth System Model (CESM). The ocean component is the Parallel Ocean Program version 2 (POP2) run at nominal 0.1&#176; horizontal resolution with 62 vertical levels. The sea ice model is the Community Ice Code version 5 (CICE5) and is run on the same horizontal grid as the ocean. FOSI is forced at the surface with historical atmospheric state and flux fields from the JRA55-do dataset. JRA55-do cover the 1958&#8211;2018 period. Following the protocol for the Coordinated Ocean-ice Reference Experiments phase II, the atmospheric forcing repeats every 61 years, and 5 cycles have been completed. These dataset will be made available on the NCAR side in the near future.
+<p>These high-resolution Forced-Ocean-Sea-Ice (FOSI) experiments uses version 2 of the Community Earth System Model (CESM). The ocean component is the Parallel Ocean Program version 2 (POP2) run at nominal 0.1&#176; horizontal resolution with 62 vertical levels. The sea ice model is the Community Ice Code version 5 (CICE5) and is run on the same horizontal grid as the ocean. FOSI is forced at the surface with historical atmospheric state and flux fields from the JRA55-do dataset. JRA55-do cover the 1958&#8211;2018 period. Following the protocol for the Coordinated Ocean-ice Reference Experiments phase II, the atmospheric forcing repeats every 61 years, and 5 cycles have been completed. These dataset will be made available on the NCAR side in the near future.</p>
+<p>&#160;</p>
 <h4>FOSI runs with Submesoscale Parameterization</h4>
 <p>This dataset build on the aforementioned FOSI experiement, and includes an additional 54 years of simulation branched at the beginning of, and run in parallel of the 5th forcing cycle with an active submesoscale parameterization. The frontal length scale Lf in the parameterization is given by Lf = 5 km. These simulations were performed by Sanjiv Ramachandran (TAMU) on the Lonestar5 cluster at TACC and the Grace cluster at TAMU, in collaboration with Frederic Castruccio (NCAR), Jim Edwards (NCAR) and Gokhan Danabasoglu (NCAR).</p>
 <p>Monthly ocean output from this dataset is publicly available for download from the <a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/FOSI/Submeso/catalog.html" rel="noopener" target="_blank">Texas A&amp;M datahub server</a>. To obtain the rest of the dataset please contact Sanjiv Ramachandran (TAMU).</p>
 <p>&#160;</p>
 <p><a name="regional-datasets"></a></p>
 <h2>Regional Datasets</h2>
-<p>The following regional climate/weather datasets have been publicly available through iHESP:</p>
+<p>Regional datasets consist of model output from high-resolution simulations using coupled regional climate model <a href="../ihesp-products/Models.html#rcesm">R-CESM</a> (Regional CESM). R-CESM couples the ocean model <a href="https://www.myroms.org/" rel="noopener" target="_blank">ROMS</a> (Regional Ocean Modelling System) with the atmospheric model <a href="https://www.mmm.ucar.edu/weather-research-and-forecasting-model" rel="noopener" target="_blank">WRF</a> (Weather Research and Forecast model) using the CESM/CIME coupling infrastructure. This dataset include standard variables from both ROMS and WRF at selected time interval on their native horizontal and vertical grid.</p>
 <p>&#160;</p>
-<h3>R-CESM Gulf of Mexico 9-year run&#160;</h3>
+<h3>1. R-CESM Gulf of Mexico 9-year run&#160;</h3>
 <p>This dataset contains R-CESM model output from the Gulf of Mexico configuration for the 2010-2018 period. The horizontal resolutions of R-CESM&#8217;s ocean and atmospheric components are 3 and 9 km, respectively. Data from Copernicus reanalysis (from <a href="https://resources.marine.copernicus.eu/" rel="noopener" target="_blank">E.U. Copernicus Marine Service Information</a>) has been used for ROMS initial and boundary conditions. WRF initial and boundary conditions are from NCEP CFSR and CFSv2.</p>
 <p>Monthly mean data for the model fields&#160;have been made publicly available for download from the&#160;<a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/Regional/GOM_9k_nature_copernicus/catalog.html" rel="noopener" target="_blank">Texas A&amp;M datahub server</a>. For more information about this dataset, users are encouraged to contact Yun Liu or Jaison Kurian.</p>
 <p>&#160;</p>
-<h3>R-CESM Gulf of Mexico Hurricane Ensembles&#160;</h3>
-<p>This dataset contains R-CESM model output from the Gulf of Mexico configuration for the 2010-2018 period. The horizontal resolutions of R-CESM&#8217;s ocean and atmospheric components are 3 and 9 km, respectively. Data from Copernicus reanalysis (from <a href="https://resources.marine.copernicus.eu/" rel="noopener" target="_blank">E.U. Copernicus Marine Service Information</a>) has been used for ROMS initial and boundary conditions. WRF initial and boundary conditions are from NCEP CFSR and CFSv2.&#160;</p>
-<p>Monthly mean data for the model fields&#160;have been made publicly available for download from the&#160;<a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/Regional/GOM_hurr/catalog.html" rel="noopener" target="_blank">Texas A&amp;M datahub server</a>. For more information about this dataset, users are encouraged to contact Jaison Kurian or Dan Fu.&#160;</p>
+<h3>2. R-CESM Gulf of Mexico Hurricane Ensembles&#160;</h3>
+<p>These results are from a hurricane ensemble simulations made using R-CESM regional coupled earth system model. Please refer to the <a href="https://doi.org/10.1175/BAMS-D-20-0024.1" rel="noopener" target="_blank">Fu et al. (2021)</a> paper on R-CESM for more details about R-CESM and this experiments.</p>
+
+<p>The configuration employed a convection-permitting 3-km horizontal resolution (no nesting domain configuration) in the atmosphere and a submesoscale-permitting 3-km horizontal resolution in the ocean. There are two sets of simulations, one using the WRF surface flux scheme (native to the WRF atmospheric model) and another using CESM surface flux scheme (from CESM/CIME coupler). Each set have 12 observed hurricanes from Gulf of Mexico (from 1995-2018), and each hurricane case have a 7-member ensembles. Duration of the experiment are few (< 10) days. Cumulus parametrization was turned off in all these experiments. The initial and boundary conditions for WRF and ROMS were directly derived from ERA5 (Hersbach et al. 2020) and <a href="https://resources.marine.copernicus.eu/" rel="noopener" target="_blank">E.U. Copernicus Marine Service</a> global ocean data (see Appendix A6) without any data assimilation, and ensemble members were generated using Stochastic Kinetic Energy Backscatter (SKEB) scheme (Shutts 2005) (see Fu et al., 2021) for these references). These experiments were configured and performed by a team including Yun Liu, Dan Fu, Jaison Kurian with guidance from Ping Chang (Texas A&M University). </p>
+<p>We have published the daily mean data for 3 ensembles of the Hurricane Harvey model run, using the WRF MM5 surface flux scheme. They may be downloaded from the<a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/Regional/GOM_hurr/catalog.html" rel="noopener" target="_blank">Texas A&amp;M datahub server</a>. For more information about this dataset, users are encouraged to contact Jaison Kurian or Dan Fu.&#160;</p>
 <p>&#160;</p>
-<h3>R-CESM Gulf of Mexico Data Assimilation&#160;</h3>
+<h3>3. R-CESM Gulf of Mexico Data Assimilation&#160;</h3>
 <p>This dataset contains the analysis of R-CESM model with data assimilation of satellite and in-situ oceanic observations for the Gulf of Mexico during the 2010-2018 period. Similar to R-CESM_GOM01, the horizontal resolutions of the ocean and atmospheric grids are 3 km and 9 km, respectively; the boundary conditions for ROMS and WRF are from Copernicus reanalysis and NCEP CFSR and CFSv2, respectively.</p>
 <p>Monthly mean data for the model fields&#160;have been made publicly available for download from the<a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/Regional/GOM_9k_DA/catalog.html" rel="noopener" target="_blank"> Texas A&amp;M datahub server</a>. For more information about this dataset, users are encouraged to contact Yun Liu.&#160;</p>
 <p>&#160;</p>
-<h3>R-CESM Kuroshio runs</h3>
+<h3>4. R-CESM Kuroshio runs</h3>
 <p>These results are from a downscaled coupled simulation of the Kuroshio region with boundary conditions from an existing 9-km North Pacific coupled simulation (Ma et al. 2016). The simulation has a nominal resolution of 3 km for both the atmosphere and ocean, and thus permits oceanic submesoscales. There is no submesoscale parameterization in this simulation. The duration of the simulation is from 15 October 2003 to 29 March 2004 and was performed by Hengkai Yao (Ocean University of China) with guidance from Jaison Kurian, Dan Fu and Ping Chang at Texas A&amp;M University.</p>
-<p>Daily atmosphere and ocean output from 15 Oct to 31 Dec 2003 have been made publicly available for download from the<a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/Regional/kuro03_20031015_20040330_run08/catalog.html" rel="noopener" target="_blank"> Texas A&amp;M datahub server</a>. For more information about this dataset, users are encouraged to contact Sanjiv Ramachandran.</p>
+<p>Daily atmosphere and ocean output from 15-Oct to 31-Dec, 2003 have been made publicly available for download from the<a href="https://datahub.geos.tamu.edu:8880/thredds/catalog/iHESPDataHUB/Regional/kuro03_20031015_20040330_run08/catalog.html" rel="noopener" target="_blank"> Texas A&amp;M datahub server</a>. For more information about this dataset, users are encouraged to contact Sanjiv Ramachandran.</p>
 <!--<a name="upcoming-releases"></a>
 <h2>Upcoming Releases</h2>
 <h3>Increment 2 (release date: Spring 2021):</h3>
